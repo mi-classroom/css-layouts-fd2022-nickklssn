@@ -2,6 +2,8 @@
 ###########################################################################  */
 
 .content-wrap{
+  position: sticky;
+  top: 0px;
   width: 100vw;
   height: 100vh;
   background-color: var(--light);
@@ -25,6 +27,7 @@
   border-radius: var(--radius-m);
   overflow: hidden;
   box-shadow: var(--n-shadow-l);
+  
 }
 
 .card figcaption{
