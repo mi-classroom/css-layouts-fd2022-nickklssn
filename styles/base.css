@@ -10,7 +10,7 @@ html {
 body{
   font-family: var(--ff-normal);
   font-weight: var(--fw-normal);
-  font-size: var(--m);
+  font-size: clamp(10px, 90%, 50px); /*  Hier ändern*/
   line-height: var(--lh-normal);
   color: var(--color-text);
   hyphens: auto;
@@ -35,7 +35,7 @@ h1{
 
 h2{
   padding-top: var(--m);
-  font-size: var(--xxl);
+  font-size: clamp(30px, 80%, 100px) /* Hier ändern*/;
   color: var(--color-accent);
   line-height: var(--lh-tight);
   margin-bottom: var(--xxl)
