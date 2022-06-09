@@ -40,7 +40,7 @@ h2{
   line-height: var(--lh-tight);
   margin-bottom: var(--xxl);
   position: absolute;
-  top: 0;
+  top: 200px;
   
 }
 

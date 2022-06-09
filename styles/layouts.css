@@ -1,15 +1,18 @@
 /* Content Wrap
 ###########################################################################  */
 
-.content-wrap{
+.content-wrap {
   position: sticky;
   top: 0px;
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   background-color: var(--light);
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+
 }
 
 .content-wrap:nth-child(even) {
@@ -20,16 +23,34 @@
 /* Card
 ###########################################################################  */
 
-.card{
+.card {
   /*width: 50%; */
   background-color: var(--lightest);
   border-radius: var(--radius-m);
   overflow: hidden;
   box-shadow: var(--n-shadow-l);
-  height: clamp(700px, 100%, 900px);
-  width: clamp(200px, 35%, 500px);
+  width: max(70vw, 500px);
 }
 
-.card figcaption{
+.card figcaption {
   padding: var(--l) var(--m) var(--xl) var(--m);
+
+}
+
+@media (orientation: landscape) {
+  .card {
+    display: flex;
+    font-size: large;
+  }
+
+  .card h2 {
+    position: relative;
+    top: 0;
+    
+  }
+
+  .card img {
+    width: 300px;
+    aspect-ratio: 1/1;
+  }
 }
